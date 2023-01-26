@@ -1,0 +1,75 @@
+<html>
+<meta name="viewport" content="widht-device-width, initial-scale-1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<img src="RM.jpg" style="width:100%">
+<style>
+img{width:300px;height:300px;}
+body { background-color: #B22222; }
+</style>
+</body>
+
+<center>
+
+<div class=" w3- bar w3-container w3-orange">
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MOTOR1')"><font color="white">MATIC</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MOTOR2')">BEBEK</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MOTOR3')">2TAK</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MOTOR4')">SPORT</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MOTOR5')">COSTUM/JEPSTYLE</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MOTOR6')">SPARTPART/ACC</button>
+</div>
+</p></center></font>
+
+<div id="MOTOR1" class="w3-container city" style="display:none">
+	<center>
+
+
+<div class="w3-panel w3-orange w3-card-4">
+	<font color="white">
+<h1 style="font-family:verdana;">MOTOR BEAT HONDA</h1>
+</font>
+</div>
+<a href="MOTORBEAT.html" class="w3-btn w3-green">KLIK UNTUK MELIHAT UNIT</a>
+
+
+<div class="w3-panel w3-orange w3-card-4">
+	<font color="white">
+<h1 style="font-family:verdana;">MOTOR BEAT YAMAHA</h1>
+</font>
+</div>
+<a href="MOTORBEATYAHAMA.html" class="w3-btn w3-green">KLIK UNTUK MELIHAT UNIT</a>
+
+<div class="w3-panel w3-orange w3-card-4">
+	<font color="white">
+<h1 style="font-family:verdana;">MOTOR VARIO</h1>
+</font>
+</div>
+<a href="VARIO.html" class="w3-btn w3-green">KLIK UNTUK MELIHAT UNIT</a>
+<hr>
+
+
+ </div></center>
+
+ 
+<script>
+function openCity(evt, cityName) {
+ var i, x, tablinks;
+ x = document.getElementsByClassName("city");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < x.length; i++) {
+ tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+ }
+ document.getElementById(cityName).style.display = "block";
+ evt.currentTarget.className += " w3-green";
+}
+</script>
+</body>
+</html>
+
+
+
